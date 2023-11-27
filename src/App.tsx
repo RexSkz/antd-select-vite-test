@@ -1,7 +1,15 @@
-import { Select } from 'antd';
+import Trigger from '@rc-component/trigger';
 
 const App = () => (
-  <Select defaultValue={1} options={[{ label: 'Label 1', value: 1 }]} />
+  <Trigger
+    popup={<span>popup</span>}
+    popupAlign={{
+      points: ['tl', 'bl'],
+      offset: [0, 3]
+    }}
+  >
+    <a href='#'>hover</a>
+  </Trigger>
 );
 
 export default App;
